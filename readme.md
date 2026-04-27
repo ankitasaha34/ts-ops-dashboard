@@ -160,10 +160,12 @@ streamlit run app.py
 ---
 
 ## 📁 Project Structure
+
+```text
 ts-ops-dashboard/
 ├── data/
-│   ├── flags.csv          # 41,935 synthetic flag records
-│   ├── reviewers.csv      # 20 reviewers across AMER/EMEA/APAC
+│   ├── flags.csv          # 41,935 synthetic flag records across AMER/EMEA/APAC
+│   ├── reviewers.csv      # 20 reviewers
 │   └── attacks.csv        # 5 ground truth attack events
 ├── notebooks/
 │   └── 01_generate_data.ipynb   # Synthetic data generation
@@ -173,7 +175,7 @@ ts-ops-dashboard/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## 💡 Key Design Decisions
