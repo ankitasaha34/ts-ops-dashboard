@@ -22,7 +22,8 @@ st.set_page_config(
 # ── Load Data ─────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    DATA_PATH = r"C:\Users\91986\OneDrive\Desktop\UIUC\Projects\ts-ops-dashboard\data"
+    BASE = os.path.dirname(os.path.abspath(__file__))
+    DATA_PATH = os.path.join(BASE, "data")
     df_flags = pd.read_csv(os.path.join(DATA_PATH, "flags.csv"), parse_dates=["date"])
     df_reviewers = pd.read_csv(os.path.join(DATA_PATH, "reviewers.csv"))
     df_attacks = pd.read_csv(os.path.join(DATA_PATH, "attacks.csv"))
